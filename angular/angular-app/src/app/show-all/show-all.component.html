@@ -1,0 +1,5 @@
+<p *ngFor="let animal of animals">
+    <app-animal [animal]="animal" (newItemEvent)="handleEvent($event)">
+    </app-animal>
+    <button (click)="deleteAnimal(animal.id)">Delete</button>
+</p>
